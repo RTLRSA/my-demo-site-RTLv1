@@ -1,0 +1,3 @@
+window.addEventListener("load",primaryNav,!1);function handleMouseOver(){const parentMenu=this.closest(".is-dropdown-submenu");this.classList.add("--is-hovered");parentMenu.classList.add("--is-hovered")}
+function handleMouseOut(){const parentMenu=this.closest(".is-dropdown-submenu");this.classList.remove("--is-hovered");parentMenu.classList.remove("--is-hovered")}
+function primaryNav(){const navLinks=document.querySelectorAll(".is-dropdown-submenu-item a");navLinks.forEach((link)=>{link.addEventListener("mouseover",handleMouseOver,!1);link.addEventListener("mouseout",handleMouseOut,!1)})}
